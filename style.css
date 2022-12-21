@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,body {
+    height: 100%;
+}
+
+.parent {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: dodgerblue;
+}
+
+.sidebar-pos {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.img-sidebar {
+   text-align: center;
+}
+
+.img-sidebar img {
+    width: 50%;
+    border-radius: 100%;
+    border: 5px solid #ccc;
+    
+
+}
+
+.menu {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 19px;
+    color: #fff;
+    opacity: 0.4;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu a.selected {
+    opacity: 1;
+}
+
+.content {
+    background-color: #ccc;
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+
+}
+
+.content-title {
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    background-color: dodgerblue;
+}
+
+.content-title h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.descriçao {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.descriçao h2 {
+    color: #343a40;
+    font-size: 46px;
+}
+
+.descriçao h2 span,.descriçao h3 span {
+    color: orangered;
+}
+
+.descriçao h3 {
+    margin: 15px 0;
+    color: #343a40;
+    font-size: 26px;
+}
+
+.descriçao p {
+    color: #343a40;
+    font-size: 20px;
+    margin-top:20px ;
+}
+
+.icon-social {
+    margin-top: 20px;
+}
+
+.icon-social a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color:gray ;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 10px;
+    text-align: center;
+    transition: 1s;
+    
+}
+
+.icon-social i {
+    line-height: 40px;
+}
+
+.icon-social a:hover {
+    background-color: orangered;
+}
+
